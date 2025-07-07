@@ -1,0 +1,62 @@
+/* -----------------------------
+   RESET E BASE
+------------------------------ */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  margin: 0;
+  padding: 40px 20px;
+  line-height: 1.6;
+}
+
+/* -----------------------------
+   CONTAINER DO QR CODE
+------------------------------ */
+.qrcode {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.qrcode h1 {
+  font-size: 1.5rem;
+  color: #222;
+  margin-bottom: 25px;
+}
+
+.qrcode img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border: 2px solid #F15A29;
+  border-radius: 8px;
+  padding: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* -----------------------------
+   RESPONSIVO
+------------------------------ */
+@media (max-width: 600px) {
+  body {
+    padding: 20px 10px;
+  }
+
+  .qrcode {
+    padding: 30px 20px;
+  }
+
+  .qrcode h1 {
+    font-size: 1.2rem;
+  }
+}

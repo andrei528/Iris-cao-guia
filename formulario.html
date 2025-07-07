@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="CSS/form.css">
+</head>
+<body>
+    <h2>Formulário de Inscrição</h2>
+
+    <form id="form">
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="cpf">CPF</label>
+        <input type="text" name="cpf" id="cpf" maxlength="11" pattern="\d*" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx" required>
+
+        <label for="data-nascimento">Data de nascimento</label>
+        <input type="date" id="data-nascimento" name="data_nascimento" required>
+
+        <label for="options-form">Opção de inscrição</label>
+        <select name="" id="options-form">
+            <option value="apadrinhar">Apadrinhar um cão</option>
+            <option value="voluntariado">Ser um voluntario</option>
+        </select>
+        
+
+        <button type="submit">Inscrever-se</button>
+    </form>
+    <script type="module" src="./JS/upload.js"></script>
+    <script type="module" src="./JS/formulario.js"></script>
+</body>
+</html>
