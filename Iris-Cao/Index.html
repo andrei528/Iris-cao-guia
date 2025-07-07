@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IRIS Cão-Guia | Instituto de Responsabilidade e Inclusão Social</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- CSS Externo -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-white text-gray-800">
+
+    <audio src="./audios/apadrinhe.wav" id="audio-apadrinhe"></audio>
+
+  <!-- Skip Link -->
+  <a href="#main-content" class="skip-link">Pular para conteúdo principal</a>
+
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="https://iris.org.br/inicio/wp-content/uploads/2021/05/logo_iris.png" alt="IRIS - O Olhar que Guia Passos" class="h-12 mr-2">
+                
+               
+            </div>
+            
+            <!-- Cell botao -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-800 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+            
+            <!-- Navegação Desktop -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#inicio" class="text-gray-800 hover:text-orange-500 font-medium">Início</a>
+                <a href="#sobre" class="text-gray-800 hover:text-orange-500 font-medium">Sobre o IRIS</a>
+                <a href="#faq" class="text-gray-800 hover:text-orange-500 font-medium">Perguntas Frequentes</a>
+                <a href="#voluntario" class="text-gray-800 hover:text-orange-500 font-medium">Seja um Voluntário</a>
+                <a href="#patrocinadores" class="text-gray-800 hover:text-orange-500 font-medium">Patrocinadores</a>
+                <a href="#contato" class="text-gray-800 hover:text-orange-500 font-medium">Contato</a>
+                <a href="#ajudar" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg font-medium transition duration-300">Quero Ajudar</a>
+            </nav>
+        </div>
+        
+        <!-- Barra de navegação Cell -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white w-full px-4 pb-4">
+            <a href="#inicio" class="block py-2 text-gray-800 hover:text-orange-500">Início</a>
+            <a href="#sobre" class="block py-2 text-gray-800 hover:text-orange-500">Sobre o IRIS</a>
+            <a href="#faq" class="block py-2 text-gray-800 hover:text-orange-500">Perguntas Frequentes</a>
+            <a href="#voluntario" class="block py-2 text-gray-800 hover:text-orange-500">Seja um Voluntário</a>
+            <a href="#patrocinadores" class="block py-2 text-gray-800 hover:text-orange-500">Patrocinadores</a>
+            <a href="#contato" class="block py-2 text-gray-800 hover:text-orange-500">Contato</a>
+            <a href="#ajudar" class="block bg-orange-500 text-white px-4 py-2 rounded-lg mt-2 text-center">Quero Ajudar</a>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" aria-label="Facebook do IRIS" class="text-gray-700 hover:text-orange-500"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram do IRIS" class="text-gray-700 hover:text-orange-500"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn do IRIS" class="text-gray-700 hover:text-orange-500"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </header>
+  
+     <main id="main-content">
+        <!-- main view -->
+        <section id="inicio" class="relative bg-gray-100">
+            <div class="container mx-auto px-4 py-16 md:py-24 flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Apadrinhe um Cão-Guia: o olhar que guia passos</h1>
+                    <p class="text-lg text-gray-600 mb-8">O IRIS transforma vidas treinando e doando cães-guias para pessoas com deficiência visual, promovendo autonomia e inclusão social.</p>
+                    <a href="./formulario.html" class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-bold text-lg transition duration-300 inline-block" id="apadrinhe">Apadrinhe um Cão-Guia</a>
+                </div>
+                <div class="md:w-1/2">
+                      <img src="//iris.org.br/inicio/wp-content/uploads/2021/05/DSC_1187-scaled.jpg" 
+                         alt="Três cães-guias com bandanas laranja do IRIS olhando para a câmera" 
+                         class="rounded-lg shadow-xl w-full h-auto">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobrenos -->
+        <audio src="./audios/Sobre.wav" id="audioSobre"></audio>
+        <section id="sobre" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Sobre o IRIS</h2>
+                
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                         <img src="//iris.org.br/inicio/wp-content/uploads/2021/05/DSC_1344-scaled.jpg" alt="" class="tp-rs-img rs-lazyload" width="1707" height="2560" data-lazyload="//iris.org.br/inicio/wp-content/uploads/2021/05/DSC_1344-scaled.jpg" 
+                             alt="Cão-guia em treinamento com uma pessoa com deficiência visual" 
+                             class="rounded-lg shadow-lg w-full h-auto">
+                    </div>
+                    <div class="md:w-1/2">
+                        <p class="text-lg text-gray-600 mb-6">Fundado em 2002, o IRIS já doou mais de 40 cães-guias, transformando a vida de pessoas com deficiência visual em todo o país.</p>
+                        <p class="text-lg text-gray-600 mb-6">Nossa atuação foi fundamental para a aprovação da Lei 11.126/2005, que garante o direito ao acesso de cães-guias em todos os espaços públicos e privados de uso coletivo.</p>
+                        <p class="text-lg text-gray-600 mb-8">Todo nosso trabalho é sustentado por doações e patrocínios, garantindo que os cães-guias sejam doados gratuitamente para quem precisa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ grup -->
+        <section id="faq" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Perguntas Frequentes</h2>
+                
+                <div class="max-w-3xl mx-auto">
+                    <!-- FAQ 1 -->
+                    <div class="mb-4 border border-gray-200 rounded-lg overflow-hidden accordion">
+                        <button class="w-full flex justify-between items-center p-6 bg-white hover:bg-gray-50 focus:outline-none accordion-header" data-audio-pergunta="perguntaUm" data-audio-resposta="respostaUm">
+                            <div class="flex items-center">
+                                <i class="fas fa-paw text-orange-500 mr-4 text-xl"></i>
+                                <span class="text-lg font-medium text-gray-800">Como funciona o processo de doação de um cão-guia?</span>
+                            </div>
+                            <i class="fas fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                        </button>
+
+                        <audio src="./audios/pergunta1.wav" id="perguntaUm"></audio>
+
+                        <div class="accordion-content bg-white">
+                            <div class="p-6 pt-0 pl-16">
+                                <p class="text-gray-600">O processo começa com a inscrição do interessado em nosso site. Após análise do perfil, agendamos uma entrevista para entender as necessidades específicas. Se aprovado, o beneficiário participa de um treinamento de adaptação com o cão-guia, que pode durar de 2 a 4 semanas. Todo o processo é gratuito.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <audio src="./audios/resposta1.wav" id="respostaUm"></audio>
+
+                    <!-- FAQ 2 -->
+                    <div class="mb-4 border border-gray-200 rounded-lg overflow-hidden accordion">
+                        <button class="w-full flex justify-between items-center p-6 bg-white hover:bg-gray-50 focus:outline-none accordion-header" data-audio-pergunta="perguntaDois" data-audio-resposta="respostaDois">
+                            <div class="flex items-center">
+                                <i class="fas fa-hand-holding-heart text-orange-500 mr-4 text-xl"></i>
+                                <span class="text-lg font-medium text-gray-800">Como posso ajudar o IRIS?</span>
+                            </div>
+                            <i class="fas fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                        </button>
+
+                        <audio src="./audios/pergunta2.wav" id="perguntaDois"></audio>
+
+                        <div class="accordion-content bg-white">
+                            <div class="p-6 pt-0 pl-16">
+                                <p class="text-gray-600">Você pode ajudar de várias formas: sendo um voluntário, apadrinhando um cão-guia em treinamento, fazendo doações financeiras ou materiais (como ração e medicamentos), ou divulgando nosso trabalho. Todas as opções estão disponíveis em nosso site na seção "Quero Ajudar".</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <audio src="./audios/resposta2.wav" id="respostaDois"></audio>
+                    
+                    <!-- FAQ 3 -->
+                    <div class="mb-4 border border-gray-200 rounded-lg overflow-hidden accordion">
+                        <button class="w-full flex justify-between items-center p-6 bg-white hover:bg-gray-50 focus:outline-none accordion-header" data-audio-pergunta="perguntaTres" data-audio-resposta="respostaTres">
+                            <div class="flex items-center">
+                                <i class="fas fa-dog text-orange-500 mr-4 text-xl"></i>
+                                <span class="text-lg font-medium text-gray-800">Quais raças são utilizadas como cães-guias?</span>
+                            </div>
+                            <i class="fas fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                        </button>
+
+                        <audio src="./audios/pergunta3.wav" id="perguntaTres"></audio>
+
+                        <div class="accordion-content bg-white">
+                            <div class="p-6 pt-0 pl-16">
+                                <p class="text-gray-600">Trabalhamos principalmente com Labrador Retriever e Golden Retriever, raças conhecidas por seu temperamento equilibrado, inteligência e disposição para o trabalho. Eventualmente, também utilizamos pastores alemães e retrievers cruzados, desde que passem por nossa rigorosa avaliação de aptidão.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <audio src="./audios/resposta3.wav" id="respostaTres"></audio>
+                    
+                    <!-- FAQ 4 -->
+                    <div class="mb-4 border border-gray-200 rounded-lg overflow-hidden accordion">
+                        <button class="w-full flex justify-between items-center p-6 bg-white hover:bg-gray-50 focus:outline-none accordion-header" data-audio-pergunta="perguntaQuatro" data-audio-resposta="respostaQuatro">
+                            <div class="flex items-center">
+                                <i class="fas fa-gavel text-orange-500 mr-4 text-xl"></i>
+                                <span class="text-lg font-medium text-gray-800">Quais são os direitos das pessoas com cão-guia?</span>
+                            </div>
+                            <i class="fas fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                        </button>
+
+                        <audio src="./audios/pergunta4.wav" id="perguntaQuatro"></audio>
+
+                        <div class="accordion-content bg-white">
+                            <div class="p-6 pt-0 pl-16">
+                                <p class="text-gray-600">Segundo a Lei 11.126/2005, pessoas com cão-guia têm direito ao acesso e permanência em todos os locais públicos e privados de uso coletivo, incluindo transportes, estabelecimentos comerciais, hotéis, restaurantes e áreas comuns de condomínios. É proibido cobrar qualquer taxa adicional pelo cão-guia.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <audio src="./audios/resposta4.wav" id="respostaQuatro"></audio>
+                </div>
+            </div>
+        </section>
+
+        <audio src="./audios/voluntario.wav" id="ad-voluntario"></audio>
+        <!-- Voluntarios -->
+        <section id="voluntario" class="py-16 bg-orange-500 text-white">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                        <h2 class="text-3xl font-bold mb-6">Transforme vidas sendo parte desta jornada!</h2>
+                        <p class="text-lg mb-6">Como voluntário do IRIS, você pode ajudar no treinamento dos cães, nos cuidados diários, na organização de eventos ou com suas habilidades profissionais.</p>
+                        <p class="text-lg mb-8">Não é necessário experiência prévia - oferecemos todo o treinamento necessário. O que importa é seu comprometimento e amor pelos animais e pela causa da inclusão.</p>
+                        <a href="./formulario.html" class="bg-white text-orange-500 hover:bg-gray-100 px-8 py-3 rounded-lg font-bold text-lg transition duration-300 inline-block">Inscreva-se como Voluntário</a>
+                    </div>
+                    <div class="md:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1586671267731-da2cf3ceeb80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                             alt="Voluntários do IRIS interagindo com filhotes de cães-guias em treinamento" 
+                             class="rounded-lg shadow-xl w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carrosel -->
+        <section id="patrocinadores" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Nossos Parceiros</h2>
+                <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Agradecemos a todas as empresas e organizações que apoiam nossa missão e tornam possível a doação gratuita de cães-guias.</p>
+                
+                <div class="relative overflow-hidden py-8">
+                    <div class="sponsor-carousel">
+                        <!-- Atualizar logos do carrosel -->
+                        <div class="flex items-center justify-center mx-8">
+                            <img src="https://via.placeholder.com/150x80?text=Patrocinador+1" alt="Logo do patrocinador 1" class="h-20 object-contain">
+                        </div>
+                        <div class="flex items-center justify-center mx-8">
+                            <img src="https://via.placeholder.com/150x80?text=Patrocinador+2" alt="Logo do patrocinador 2" class="h-20 object-contain">
+                        </div>
+                        <div class="flex items-center justify-center mx-8">
+                            <img src="https://via.placeholder.com/150x80?text=Patrocinador+3" alt="Logo do patrocinador 3" class="h-20 object-contain">
+                        </div>
+                        <div class="flex items-center justify-center mx-8">
+                            <img src="https://via.placeholder.com/150x80?text=Patrocinador+4" alt="Logo do patrocinador 4" class="h-20 object-contain">
+                        </div>
+                        <div class="flex items-center justify-center mx-8">
+                            <img src="https://via.placeholder.com/150x80?text=Patrocinador+5" alt="Logo do patrocinador 5" class="h-20 object-contain">
+                        </div>
+                        <div class="flex items-center justify-center mx-8">
+                            <img src="https://via.placeholder.com/150x80?text=Patrocinador+6" alt="Logo do patrocinador 6" class="h-20 object-contain">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cards F -->
+        <section id="ajudar" class="py-16 bg-gray-800 text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold mb-6">Você pode fazer a diferença!</h2>
+                <p class="text-xl mb-8 max-w-3xl mx-auto">Com sua ajuda, podemos treinar mais cães-guias e transformar mais vidas. Escolha como deseja contribuir:</p>
+                
+                <div class="flex flex-col md:flex-row justify-center gap-6 max-w-4xl mx-auto">
+                    <div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg flex-1">
+                        <i class="fas fa-donate text-orange-500 text-4xl mb-4"></i>
+                        <h3 class="text-xl font-bold mb-3">Doação Financeira</h3>
+                        <p class="mb-4">Contribua com qualquer valor para custear o treinamento e cuidados com nossos cães-guias.</p>
+                        <a href="doacao.html" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-lg font-medium inline-block">Doar Agora</a>
+                    </div>
+                    
+                    <div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg flex-1">
+                        <i class="fas fa-paw text-orange-500 text-4xl mb-4"></i>
+                        <h3 class="text-xl font-bold mb-3">Apadrinhamento</h3>
+                        <p class="mb-4">Apadrinhe um cão-guia específico e acompanhe todo seu processo de treinamento.</p>
+                        <a href="formulario.html" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-lg font-medium inline-block">Apadrinhar um cão</a>
+                    </div>
+                    
+                    <div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg flex-1">
+                        <i class="fas fa-hands-helping text-orange-500 text-4xl mb-4"></i>
+                        <h3 class="text-xl font-bold mb-3">Voluntariado</h3>
+                        <p class="mb-4">Doe seu tempo e habilidades para ajudar em diversas áreas do IRIS.</p>
+                        <a href="formulario.html" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-lg font-medium inline-block">Ser Voluntário</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contato" class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center mb-4">
+                        <img src="https://via.placeholder.com/50" alt="Logo IRIS Cão-Guia" class="h-12 mr-2">
+                        <span class="text-xl font-bold">IRIS Cão-Guia</span>
+                    </div>
+                    <p class="mb-4">Instituto de Responsabilidade e Inclusão Social</p>
+                    <p class="mb-4">Promovendo autonomia e inclusão desde 2002</p>
+                    <div class="flex space-x-4">
+                        <a href="#" aria-label="Facebook do IRIS" class="text-white hover:text-orange-500"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram do IRIS" class="text-white hover:text-orange-500"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn do IRIS" class="text-white hover:text-orange-500"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube do IRIS" class="text-white hover:text-orange-500"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="text-lg font-bold mb-4">Institucional</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="hover:text-orange-500">Sobre o IRIS</a></li>
+                            <li><a href="#" class="hover:text-orange-500">Transparência</a></li>
+                            <li><a href="#" class="hover:text-orange-500">Relatórios Anuais</a></li>
+                            <li><a href="#" class="hover:text-orange-500">Trabalhe Conosco</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-bold mb-4">Ajuda</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="hover:text-orange-500">Perguntas Frequentes</a></li>
+                            <li><a href="#" class="hover:text-orange-500">Termos de Uso</a></li>
+                            <li><a href="#" class="hover:text-orange-500">Política de Privacidade</a></li>
+                            <li><a href="#" class="hover:text-orange-500">Contato</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-bold mb-4">Contato</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-orange-500 mt-1 mr-2"></i>
+                                <span>Rua dos Cães-Guias, 123 - São Paulo/SP</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-phone text-orange-500 mr-2"></i>
+                                <span>(11) 1234-5678</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-envelope text-orange-500 mr-2"></i>
+                                <span>contato@iriscaoguia.org.br</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>© 2023 IRIS Cão-Guia. Todos os direitos reservados.</p>
+                <p class="mt-2">CNPJ: 12.345.678/0001-90 - Organização da Sociedade Civil de Interesse Público (OSCIP)</p>
+            </div>
+        </div>
+    </footer>
+ 
+  <script src="js/scripts.js"></script>
+  <script type="module" src="./JS/audio.js"></script>
+</body>
+</html>
