@@ -1,4 +1,4 @@
-const API_URL_CADASTRO = "http://127.0.0.1:3000/formulario";
+const API_URL_CADASTRO = "https://back-end-iris-1.onrender.com/formulario";
 
 export const criarCadastro = async (form) => {
     try{
