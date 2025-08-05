@@ -1,1 +1,1 @@
-Site feita para uma ONG com audiodescrições
+Site feito para uma ONG com audiodescrições
